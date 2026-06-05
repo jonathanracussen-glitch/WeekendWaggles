@@ -34,9 +34,14 @@ body {
 }
 
 .section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   max-width: 1000px;
   margin: auto;
+}
+
+.section.alt {
+  background: white;
+  transform: rotate(-0.3deg);
 }
 
 .section.alt {
