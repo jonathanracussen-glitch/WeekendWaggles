@@ -108,3 +108,14 @@ footer {
   padding: 20px;
   font-size: 0.9rem;
 }
+
+.img-card {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transform: rotate(1deg);
+}
