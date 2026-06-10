@@ -34,14 +34,23 @@ body {
 }
 
 .section {
-  padding: 80px 20px;
-  max-width: 1000px;
-  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("backgrounds.png");
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  max-width: none;
+  margin: 0;
 }
 
 .section.alt {
-  background: white;
-  transform: rotate(-0.3deg);
+  background: transparent;
 }
 
 .section.alt {
