@@ -159,6 +159,52 @@ body {
   box-shadow: 0 16px 35px rgba(0,0,0,0.12);
 }
 
+/* SERVICE AREA */
+
+.service-area {
+  max-width: 900px;
+  padding-top: 35px;
+  padding-bottom: 75px;
+}
+
+.service-card {
+  background: #fffdf7;
+  border: 1px solid rgba(255,179,71,0.45);
+  border-radius: 28px;
+  padding: 50px 38px;
+  text-align: center;
+  box-shadow: 0 16px 38px rgba(0,0,0,0.08);
+}
+
+.service-card h2 {
+  margin-top: 0;
+}
+
+.service-card p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 650px;
+  margin: 12px auto;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 15px 30px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.28);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
 /* WHY CHOOSE SECTION */
 
 .why-section {
@@ -270,7 +316,8 @@ button {
 }
 
 .btn-primary:hover,
-button:hover {
+button:hover,
+.whatsapp-button:hover {
   opacity: 0.9;
 }
 
