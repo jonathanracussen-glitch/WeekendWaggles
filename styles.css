@@ -98,7 +98,7 @@ background-image: linear-gradient(
     rgba(255,255,255,0.45)
   ),
   url("backgrounds.png");
-background-size: 100% auto;
+background-size: cover;
 background-position: center center;
   background-repeat: no-repeat;
   border-radius: 28px;
@@ -160,7 +160,7 @@ background-position: center center;
   width: 100%;
   height: auto;
   object-fit: contain;
-  transform: translate(0px, 25px);
+  transform: translate(-60px, 25px);
 }
 
 /* SERVICE AREA */
