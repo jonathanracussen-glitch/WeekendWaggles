@@ -219,6 +219,41 @@ footer {
   font-size: 0.9rem;
 }
 
+/* HOW IT WORKS STEP CARDS */
+
+.step-card {
+display: flex;
+align-items: center;
+gap: 18px;
+text-align: left;
+}
+
+.step-number {
+width: 44px;
+height: 44px;
+min-width: 44px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: #ffb347;
+color: white;
+border-radius: 50%;
+
+font-weight: 700;
+font-size: 1.1rem;
+}
+
+.step-card h3 {
+margin: 0 0 6px;
+}
+
+.step-card p {
+margin: 0;
+}
+
+
 /* MOBILE */
 
 @media (max-width: 768px) {
@@ -271,4 +306,8 @@ footer {
     font-size: 1rem;
     text-align: center;
   }
+.step-card {
+flex-direction: column;
+text-align: center;
+}
 }
