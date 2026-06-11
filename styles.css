@@ -88,9 +88,9 @@ body {
 
 .about-background {
   max-width: 1200px;
-  min-height: 580px;
+  min-height: 360px;
   margin: 60px auto 45px;
-  padding: 60px 50px;
+  padding: 35px 50px;
   display: flex;
   align-items: center;
   background-image: linear-gradient(
@@ -156,11 +156,11 @@ body {
 }
 
 .about-dog-image img {
-  max-width: 520px;
+  max-width: 560px;
   width: 100%;
   height: auto;
   object-fit: contain;
-  transform: translate(20px, 15px);
+  transform: translate(35px, 35px);
 }
 
 /* SERVICE AREA */
