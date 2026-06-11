@@ -46,7 +46,14 @@ body {
 /* ABOUT SECTION */
 
 .about-background {
-  background: #f8f8f4;
+  background-image: linear-gradient(
+      rgba(248, 248, 244, 0.75),
+      rgba(248, 248, 244, 0.75)
+    ),
+    url("backgrounds.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   color: #222;
   border-radius: 20px;
   padding: 60px;
