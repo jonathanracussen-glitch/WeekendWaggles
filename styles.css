@@ -43,24 +43,32 @@ body {
   margin: auto;
 }
 
-/* Background image section */
+/* ABOUT SECTION */
 
 .about-background {
   background: #f8f8f4;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
+  color: #222;
   border-radius: 20px;
   padding: 60px;
   margin-top: 40px;
   margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
-/* Alternate sections */
+.about-background h2 {
+  color: #222;
+}
+
+.about-background p {
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ALTERNATE SECTIONS */
 
 .section.alt {
   background: white;
+  border-radius: 20px;
 }
 
 /* HEADINGS */
@@ -168,5 +176,13 @@ footer {
 
   .hero h1 {
     font-size: 2.2rem;
+  }
+
+  .section {
+    padding: 50px 16px;
+  }
+
+  .about-background {
+    padding: 35px 20px;
   }
 }
