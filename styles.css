@@ -8,8 +8,10 @@ body {
 /* HERO */
 
 .hero {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(135deg, #ffb347, #ffcc33);
-  padding: 105px 20px 110px;
+  padding: 115px 20px 120px;
   text-align: center;
   color: #111;
   border-bottom-left-radius: 50% 12%;
@@ -17,25 +19,60 @@ body {
   box-shadow: 0 14px 35px rgba(0,0,0,0.12);
 }
 
+/* muddy paw trail */
+.hero::before {
+  content: "🐾  🐾     🐾   🐾      🐾";
+  position: absolute;
+  left: -20px;
+  top: 70px;
+  width: 120%;
+  font-size: 2.4rem;
+  opacity: 0.23;
+  transform: rotate(-8deg);
+  color: #5b3a1e;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "🐾     🐾   🐾      🐾";
+  position: absolute;
+  right: -40px;
+  bottom: 45px;
+  width: 80%;
+  font-size: 2rem;
+  opacity: 0.22;
+  transform: rotate(10deg);
+  color: #5b3a1e;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
 .hero h1 {
-  font-size: 4.4rem;
+  font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
+  font-size: 5rem;
   margin: 0 0 18px;
   font-weight: 700;
   letter-spacing: -1px;
+  color: #203015;
 }
 
 .tagline {
-  font-size: 1.4rem;
-  margin-bottom: 28px;
+  font-size: 1.45rem;
+  margin-bottom: 30px;
 }
 
 .btn-primary {
-  background: #111;
+  background: #203015;
   color: white;
-  padding: 15px 30px;
-  border-radius: 10px;
+  padding: 15px 32px;
+  border-radius: 999px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
 
 /* SECTIONS */
@@ -47,7 +84,9 @@ body {
 }
 
 .section h2 {
-  font-size: 2.4rem;
+  font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
+  font-size: 2.8rem;
+  color: #203015;
 }
 
 /* ABOUT */
@@ -77,21 +116,26 @@ body {
 
 .about-content h2 {
   text-align: left;
-  font-size: 3.8rem;
+  font-size: 4rem;
   line-height: 1;
   margin: 0 0 28px;
   color: #203015;
   font-weight: 700;
 }
 
-.about-content h2::after {
+.about-content h2::after,
+.section h2::after {
   content: "";
   display: block;
   width: 75px;
   height: 6px;
   background: #ffb347;
   border-radius: 999px;
-  margin-top: 18px;
+  margin: 18px auto 0;
+}
+
+.about-content h2::after {
+  margin-left: 0;
 }
 
 .about-content p {
@@ -104,17 +148,18 @@ body {
 
 /* WHY CHOOSE SECTION */
 
-.section:not(.alt):not(.about-background):not(#pricing) {
+.why-section {
   text-align: center;
 }
 
-.section:not(.alt):not(.about-background):not(#pricing) .card {
+.why-section .card {
   background: #fffdf7;
-  border: 1px solid rgba(255,179,71,0.25);
+  border: 1px solid rgba(255,179,71,0.4);
 }
 
-.section:not(.alt):not(.about-background):not(#pricing) .card h3 {
-  font-size: 1.25rem;
+.why-section .card h3 {
+  font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
+  font-size: 1.45rem;
   color: #203015;
 }
 
@@ -171,6 +216,12 @@ h2 {
 
 /* PRICING */
 
+.pricing h3 {
+  font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
+  font-size: 1.5rem;
+  color: #203015;
+}
+
 .pricing .price {
   font-size: 1.5rem;
   font-weight: bold;
@@ -187,7 +238,7 @@ button {
   padding: 11px;
   width: 100%;
   border: none;
-  border-radius: 8px;
+  border-radius: 999px;
   background: #ffb347;
   cursor: pointer;
   font-weight: bold;
@@ -201,13 +252,27 @@ button:hover {
 /* CTA */
 
 .cta {
-  background: #111;
+  background: #203015;
   color: white;
   text-align: center;
-  padding: 65px 20px;
+  padding: 75px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: "🐾   🐾      🐾";
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  opacity: 0.2;
+  font-size: 2rem;
+  transform: rotate(-12deg);
 }
 
 .cta h2 {
+  font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
+  font-size: 2.8rem;
   margin-bottom: 14px;
 }
 
@@ -222,47 +287,50 @@ footer {
 /* HOW IT WORKS STEP CARDS */
 
 .step-card {
-display: flex;
-align-items: center;
-gap: 18px;
-text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-align: left;
 }
 
 .step-number {
-width: 44px;
-height: 44px;
-min-width: 44px;
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-background: #ffb347;
-color: white;
-border-radius: 50%;
-
-font-weight: 700;
-font-size: 1.1rem;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffb347;
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .step-card h3 {
-margin: 0 0 6px;
+  margin: 0 0 6px;
+  font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
+  color: #203015;
 }
 
 .step-card p {
-margin: 0;
+  margin: 0;
 }
-
 
 /* MOBILE */
 
 @media (max-width: 768px) {
   .hero {
-    padding: 75px 20px 70px;
+    padding: 85px 20px 80px;
   }
 
   .hero h1 {
-    font-size: 2.4rem;
+    font-size: 2.9rem;
+  }
+
+  .hero::before,
+  .hero::after {
+    font-size: 1.5rem;
   }
 
   .tagline {
@@ -274,7 +342,7 @@ margin: 0;
   }
 
   .section h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .about-background {
@@ -293,7 +361,7 @@ margin: 0;
   }
 
   .about-content h2 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     text-align: center;
   }
 
@@ -306,8 +374,9 @@ margin: 0;
     font-size: 1rem;
     text-align: center;
   }
-.step-card {
-flex-direction: column;
-text-align: center;
-}
+
+  .step-card {
+    flex-direction: column;
+    text-align: center;
+  }
 }
