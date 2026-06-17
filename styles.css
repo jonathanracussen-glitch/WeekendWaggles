@@ -325,6 +325,24 @@ button:hover,
   opacity: 0.9;
 }
 
+.package-button {
+  display: block;
+  margin-top: 18px;
+  padding: 13px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 999px;
+  background: #ffb347;
+  color: #111;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.package-button:hover {
+  opacity: 0.9;
+}
+
 /* CTA */
 
 .cta {
