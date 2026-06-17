@@ -88,7 +88,7 @@ body {
 
 .about-background {
   max-width: 1200px;
-  min-height: 360px;
+  min-height: 500px;
   margin: 60px auto 45px;
   padding: 35px 50px;
   display: flex;
@@ -114,7 +114,7 @@ background-position: center center;
 }
 
 .about-content {
-  max-width: 420px;
+  max-width: 520px;
 }
 
 .about-content h2 {
@@ -156,11 +156,11 @@ background-position: center center;
 }
 
 .about-dog-image img {
-  max-width: 560px;
+  max-width: 720px;
   width: 100%;
   height: auto;
   object-fit: contain;
-  transform: translate(-60px, 25px);
+  transform: translate(-80px, 55px);
 }
 
 /* SERVICE AREA */
