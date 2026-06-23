@@ -73,8 +73,8 @@ body {
 /* SECTIONS */
 
 .section {
-  padding: 72px 20px;
-  max-width: 1120px;
+  padding: 60px 20px;
+  max-width: 1180px;
   margin: auto;
   box-sizing: border-box;
 }
@@ -87,7 +87,7 @@ body {
 
 h2 {
   text-align: center;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 .section h2::after {
@@ -103,15 +103,15 @@ h2 {
 /* ABOUT */
 
 .about-background {
-  max-width: 1120px;
-  min-height: 440px;
-  margin: 46px auto 28px;
-  padding: 30px 44px;
+  max-width: 1000px;
+  min-height: 360px;
+  margin: 36px auto 20px;
+  padding: 30px 42px;
   display: flex;
   align-items: center;
   background-image: linear-gradient(
-      rgba(255,255,255,0.48),
-      rgba(255,255,255,0.48)
+      rgba(255,255,255,0.50),
+      rgba(255,255,255,0.50)
     ),
     url("backgrounds.png");
   background-size: cover;
@@ -126,18 +126,18 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 34px;
+  gap: 28px;
 }
 
 .about-content {
-  max-width: 520px;
+  max-width: 500px;
 }
 
 .about-content h2 {
   text-align: left;
-  font-size: 4rem;
+  font-size: 3.7rem;
   line-height: 1;
-  margin: 0 0 22px;
+  margin: 0 0 20px;
 }
 
 .about-content h2::after {
@@ -145,10 +145,10 @@ h2 {
 }
 
 .about-content p {
-  font-size: 1.12rem;
-  line-height: 1.6;
+  font-size: 1.06rem;
+  line-height: 1.55;
   color: #111;
-  max-width: 580px;
+  max-width: 560px;
 }
 
 .about-dog-image {
@@ -161,11 +161,11 @@ h2 {
 }
 
 .about-dog-image img {
-  max-width: 620px;
+  max-width: 540px;
   width: 100%;
   height: auto;
   object-fit: contain;
-  transform: translate(-55px, 42px);
+  transform: translate(-35px, 35px);
 }
 
 /* GRID */
@@ -173,7 +173,7 @@ h2 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
+  gap: 22px;
 }
 
 /* CARDS */
@@ -181,7 +181,7 @@ h2 {
 .card {
   background: white;
   color: #222;
-  padding: 26px;
+  padding: 22px;
   border-radius: 18px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.075);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -192,8 +192,8 @@ h2 {
 }
 
 .card p {
-  font-size: 0.98rem;
-  line-height: 1.58;
+  font-size: 0.96rem;
+  line-height: 1.55;
 }
 
 .card:hover {
@@ -203,8 +203,8 @@ h2 {
 
 .card ul {
   padding-left: 18px;
-  font-size: 0.96rem;
-  line-height: 1.55;
+  font-size: 0.94rem;
+  line-height: 1.5;
 }
 
 /* WHY CHOOSE */
@@ -214,23 +214,23 @@ h2 {
 }
 
 .why-section .grid {
-  gap: 24px;
+  gap: 22px;
 }
 
 .why-section .card {
   background: #fffdf7;
   border: 1px solid rgba(255,179,71,0.45);
-  padding: 30px 26px;
+  padding: 26px 22px;
 }
 
 .why-section .card h3 {
   font-family: 'Patrick Hand', cursive;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   color: #203015;
 }
 
 .why-section .card p {
-  font-size: 0.98rem;
+  font-size: 0.96rem;
 }
 
 /* HOW IT WORKS */
@@ -244,14 +244,14 @@ h2 {
 .step-card {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   text-align: left;
 }
 
 .step-number {
-  width: 44px;
-  height: 44px;
-  min-width: 44px;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,34 +259,34 @@ h2 {
   color: white;
   border-radius: 50%;
   font-weight: 700;
-  font-size: 1.08rem;
+  font-size: 1rem;
 }
 
 .step-card h3 {
   margin: 0 0 5px;
   font-family: 'Patrick Hand', cursive;
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   color: #203015;
 }
 
 .step-card p {
   margin: 0;
-  font-size: 0.96rem;
+  font-size: 0.94rem;
 }
 
 /* SERVICE AREA */
 
 .service-area {
-  max-width: 860px;
-  padding-top: 26px;
-  padding-bottom: 60px;
+  max-width: 760px;
+  padding-top: 18px;
+  padding-bottom: 45px;
 }
 
 .service-card {
   background: #fffdf7;
   border: 1px solid rgba(255,179,71,0.45);
   border-radius: 24px;
-  padding: 40px 34px;
+  padding: 34px 30px;
   text-align: center;
   box-shadow: 0 13px 32px rgba(0,0,0,0.075);
 }
@@ -296,16 +296,16 @@ h2 {
 }
 
 .service-card p {
-  font-size: 1.02rem;
-  line-height: 1.6;
-  max-width: 650px;
-  margin: 10px auto;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  max-width: 620px;
+  margin: 9px auto;
 }
 
 /* PRICING */
 
 #pricing {
-  max-width: 1120px;
+  max-width: 1180px;
 }
 
 .pricing {
@@ -315,12 +315,12 @@ h2 {
 
 .pricing h3 {
   font-family: 'Patrick Hand', cursive;
-  font-size: 2rem;
+  font-size: 1.95rem;
   color: #203015;
 }
 
 .pricing-note {
-  min-height: 68px;
+  min-height: 62px;
 }
 
 .featured {
@@ -328,12 +328,13 @@ h2 {
 }
 
 .pricing-extra {
-  margin-top: 55px;
-  padding: 42px 34px;
+  margin-top: 36px;
+  padding: 38px 32px;
   background: #fffdf7;
   border-radius: 26px;
   border: 1px solid rgba(255,179,71,0.45);
   box-shadow: 0 13px 32px rgba(0,0,0,0.075);
+  text-align: center;
 }
 
 .pricing-extra h2 {
@@ -343,8 +344,8 @@ h2 {
 .pricing-extra-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
-  gap: 24px;
-  margin-top: 28px;
+  gap: 22px;
+  margin-top: 26px;
 }
 
 .pricing-type {
@@ -355,45 +356,44 @@ h2 {
 
 .pricing-type h3 {
   font-family: 'Patrick Hand', cursive;
-  font-size: 2.1rem;
+  font-size: 2rem;
   color: #203015;
   margin-bottom: 10px;
 }
 
 .price-big {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 800;
   color: #203015;
-  margin-top: 16px;
+  margin-top: 14px;
   line-height: 1;
 }
 
 .price-sub {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #777;
-  margin: 5px 0 18px;
+  margin: 5px 0 16px;
 }
 
 .pricing-type ul {
   text-align: left;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .pricing-footer {
-  margin: 26px auto 0;
+  margin: 24px auto 0;
   max-width: 760px;
   text-align: center;
-  font-size: 0.98rem;
-  line-height: 1.6;
+  font-size: 0.96rem;
+  line-height: 1.55;
 }
 
 /* BUTTONS */
 
 .btn-primary:hover,
-.whatsapp-button:hover,
-.package-button:hover {
+.whatsapp-button:hover {
   opacity: 0.9;
 }
 
@@ -414,28 +414,13 @@ h2 {
   transform: translateY(-2px);
 }
 
-.package-button {
-  display: block;
-  margin-top: auto;
-  padding: 12px;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  border-radius: 999px;
-  background: #ffb347;
-  color: #111;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
 /* CTA */
 
 .cta {
   background: #203015;
   color: white;
   text-align: center;
-  padding: 68px 20px;
+  padding: 62px 20px;
   position: relative;
   overflow: hidden;
 }
@@ -452,7 +437,7 @@ h2 {
 
 .cta h2 {
   font-family: 'Patrick Hand', cursive;
-  font-size: 3.1rem;
+  font-size: 3rem;
   margin-bottom: 12px;
 }
 
@@ -542,8 +527,8 @@ footer {
   }
 
   .pricing-extra {
-    padding: 34px 20px;
-    margin-top: 42px;
+    padding: 32px 20px;
+    margin-top: 34px;
   }
 
   .pricing-extra-grid {
@@ -551,6 +536,6 @@ footer {
   }
 
   .price-big {
-    font-size: 2.7rem;
+    font-size: 2.6rem;
   }
 }
