@@ -73,7 +73,7 @@ body {
 /* SECTIONS */
 
 .section {
-  padding: 60px 20px;
+  padding: 28px 20px;
   max-width: 1180px;
   margin: auto;
   box-sizing: border-box;
@@ -103,15 +103,15 @@ h2 {
 /* ABOUT */
 
 .about-background {
-  max-width: 1000px;
-  min-height: 360px;
-  margin: 36px auto 20px;
-  padding: 30px 42px;
+  max-width: 1120px;
+  min-height: 430px;
+  margin: 30px auto 10px;
+  padding: 28px 42px;
   display: flex;
   align-items: center;
   background-image: linear-gradient(
-      rgba(255,255,255,0.50),
-      rgba(255,255,255,0.50)
+      rgba(255,255,255,0.48),
+      rgba(255,255,255,0.48)
     ),
     url("backgrounds.png");
   background-size: cover;
@@ -126,16 +126,16 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 28px;
+  gap: 34px;
 }
 
 .about-content {
-  max-width: 500px;
+  max-width: 520px;
 }
 
 .about-content h2 {
   text-align: left;
-  font-size: 3.7rem;
+  font-size: 3.9rem;
   line-height: 1;
   margin: 0 0 20px;
 }
@@ -145,10 +145,10 @@ h2 {
 }
 
 .about-content p {
-  font-size: 1.06rem;
-  line-height: 1.55;
+  font-size: 1.08rem;
+  line-height: 1.58;
   color: #111;
-  max-width: 560px;
+  max-width: 580px;
 }
 
 .about-dog-image {
@@ -161,11 +161,11 @@ h2 {
 }
 
 .about-dog-image img {
-  max-width: 540px;
+  max-width: 680px;
   width: 100%;
   height: auto;
   object-fit: contain;
-  transform: translate(-35px, 35px);
+  transform: translate(-70px, 48px);
 }
 
 /* GRID */
@@ -181,7 +181,7 @@ h2 {
 .card {
   background: white;
   color: #222;
-  padding: 22px;
+  padding: 24px;
   border-radius: 18px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.075);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -192,7 +192,7 @@ h2 {
 }
 
 .card p {
-  font-size: 0.96rem;
+  font-size: 0.98rem;
   line-height: 1.55;
 }
 
@@ -203,7 +203,7 @@ h2 {
 
 .card ul {
   padding-left: 18px;
-  font-size: 0.94rem;
+  font-size: 0.95rem;
   line-height: 1.5;
 }
 
@@ -214,23 +214,23 @@ h2 {
 }
 
 .why-section .grid {
-  gap: 22px;
+  gap: 24px;
 }
 
 .why-section .card {
   background: #fffdf7;
   border: 1px solid rgba(255,179,71,0.45);
-  padding: 26px 22px;
+  padding: 34px 28px;
 }
 
 .why-section .card h3 {
   font-family: 'Patrick Hand', cursive;
-  font-size: 1.7rem;
+  font-size: 1.95rem;
   color: #203015;
 }
 
 .why-section .card p {
-  font-size: 0.96rem;
+  font-size: 0.98rem;
 }
 
 /* HOW IT WORKS */
@@ -244,14 +244,14 @@ h2 {
 .step-card {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
   text-align: left;
 }
 
 .step-number {
-  width: 42px;
-  height: 42px;
-  min-width: 42px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,34 +259,34 @@ h2 {
   color: white;
   border-radius: 50%;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 .step-card h3 {
   margin: 0 0 5px;
   font-family: 'Patrick Hand', cursive;
-  font-size: 1.55rem;
+  font-size: 1.8rem;
   color: #203015;
 }
 
 .step-card p {
   margin: 0;
-  font-size: 0.94rem;
+  font-size: 0.96rem;
 }
 
 /* SERVICE AREA */
 
 .service-area {
   max-width: 760px;
-  padding-top: 18px;
-  padding-bottom: 45px;
+  padding-top: 10px;
+  padding-bottom: 28px;
 }
 
 .service-card {
   background: #fffdf7;
   border: 1px solid rgba(255,179,71,0.45);
   border-radius: 24px;
-  padding: 34px 30px;
+  padding: 42px 36px;
   text-align: center;
   box-shadow: 0 13px 32px rgba(0,0,0,0.075);
 }
@@ -296,8 +296,8 @@ h2 {
 }
 
 .service-card p {
-  font-size: 0.98rem;
-  line-height: 1.55;
+  font-size: 1rem;
+  line-height: 1.58;
   max-width: 620px;
   margin: 9px auto;
 }
@@ -328,7 +328,7 @@ h2 {
 }
 
 .pricing-extra {
-  margin-top: 36px;
+  margin-top: 24px;
   padding: 38px 32px;
   background: #fffdf7;
   border-radius: 26px;
@@ -470,7 +470,7 @@ footer {
   }
 
   .section {
-    padding: 46px 16px;
+    padding: 38px 16px;
   }
 
   .section h2 {
@@ -517,7 +517,7 @@ footer {
   }
 
   .about-dog-image img {
-    max-width: 250px;
+    max-width: 280px;
     transform: none;
   }
 
@@ -528,7 +528,7 @@ footer {
 
   .pricing-extra {
     padding: 32px 20px;
-    margin-top: 34px;
+    margin-top: 24px;
   }
 
   .pricing-extra-grid {
